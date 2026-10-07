@@ -1,0 +1,131 @@
+:root{
+    --Gray-500: #6b6b6b;
+    --Gray-950: #111111;
+    --White: #ffffff;
+    --Yellow : #F4D04E;
+
+    --padding: 24px;
+
+    --border-raduis-tiny: 4px;
+    --border-raduis-sm: 10px;
+    --border-radius-sm2: 12px;
+    --border-raduis-md: 20px;
+
+    
+    --line-height: 150%;
+    --letter-spacing: 0px;
+    
+    --txt-preset1-extra-bold: 800;
+    --txt-preset1-font-size: 24px;
+    
+    --txt-preset2-medium: 500;
+    --txt-preset2-font-size: 16px;
+    
+    --txt-preset3-medium: 500;
+    --txt-preset3-extra-bold: 800;
+    --txt-preset3-font-size: 14px;
+    
+}
+
+body {
+    background: var(--Yellow);
+    font-family: "Figtree", sans-serif;
+
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    background: var(--White);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 2px black;
+    border-radius: var(--border-raduis-md);
+    width: 384px;
+    height: 522px;
+    padding: var(--padding);
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    
+    border: 2px solid var(--Gray-950);
+
+    transition: .5s;
+}
+
+#card:hover {
+    box-shadow: 15px 15px 2px black;
+}
+
+#card * {
+    letter-spacing: var(--letter-spacing);    
+    line-height: var(--line-height);
+}
+
+#card img {
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-raduis-sm); 
+} 
+
+#card header {
+    gap: 12px; 
+}
+
+#card #tag {
+    font-weight: var(--txt-preset3-extra-bold);
+    font-size: var(--txt-preset3-font-size);
+    display: block;
+    width: fit-content;
+    background: var(--Yellow);
+    border-radius: var(--border-raduis-tiny);
+    padding: 4px 12px;
+    margin-bottom: 5px;
+}
+
+#card time {
+    font-size: var(--txt-preset3-font-size);
+    font-weight: var(--txt-preset3-medium);
+    width: fit-content;
+}
+
+#card h1 {
+    font-weight: var(--txt-preset1-extra-bold);
+    font-size: var(--txt-preset1-font-size);
+    transition: .5s;
+}
+
+#card:hover h1{
+    color: var(--Yellow);
+}
+
+#card p {
+    font-size: var(--txt-preset2-font-size);
+    font-weight: var(--txt-preset2-medium);
+    color: var(--Gray-500);
+    margin: 0;
+}
+
+#card footer {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+}
+
+#card #avatar {
+    height: 32px;
+    width: 32px;
+}
+
+#card #author-name {
+    font-weight: var(--txt-preset3-extra-bold);
+    font-size: var(--txt-preset3-font-size);
+}
