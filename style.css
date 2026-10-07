@@ -48,9 +48,9 @@ body {
     width: 384px;
     height: 522px;
     padding: var(--padding);
-    gap: 24px;
     display: flex;
     flex-direction: column;
+    gap: 24px;
     
     border: 2px solid var(--Gray-950);
 
@@ -75,6 +75,8 @@ body {
 } 
 
 #card header {
+    display: flex;
+    flex-direction: column;
     gap: 12px; 
 }
 
@@ -86,7 +88,6 @@ body {
     background: var(--Yellow);
     border-radius: var(--border-raduis-tiny);
     padding: 4px 12px;
-    margin-bottom: 5px;
 }
 
 #card time {
@@ -99,10 +100,12 @@ body {
     font-weight: var(--txt-preset1-extra-bold);
     font-size: var(--txt-preset1-font-size);
     transition: .5s;
+    margin: 0;
 }
 
-#card:hover h1{
+#card h1:hover {
     color: var(--Yellow);
+    cursor: pointer;
 }
 
 #card p {
@@ -114,7 +117,7 @@ body {
 
 #card footer {
     display: flex;
-    justify-self: start;
+    justify-content: start;
     align-items: center;
     gap: 12px;
     width: fit-content;
