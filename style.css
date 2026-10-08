@@ -30,7 +30,7 @@
 body {
     background: var(--Yellow);
     font-family: "Figtree", sans-serif;
-
+    margin: 0;
 }
 
 #main {
@@ -45,7 +45,7 @@ body {
     box-sizing: border-box;
     box-shadow: 10px 10px 2px black;
     border-radius: var(--border-raduis-md);
-    width: 384px;
+    max-width: 384px;
     height: 522px;
     padding: var(--padding);
     display: flex;
@@ -90,7 +90,7 @@ body {
     padding: 4px 12px;
 }
 
-#card time {
+#card #date {
     font-size: var(--txt-preset3-font-size);
     font-weight: var(--txt-preset3-medium);
     width: fit-content;
@@ -132,3 +132,54 @@ body {
     font-weight: var(--txt-preset3-extra-bold);
     font-size: var(--txt-preset3-font-size);
 }
+
+
+
+
+@media (max-width: 460px) {
+
+    #card{ 
+        width: 327px;
+        height: 501px; 
+    }
+
+    #card img {
+        width: 279px;
+        height: 200px;
+    }
+
+    #card header {
+        width: 279px;
+        height: 173px;
+    }
+    
+    #card #tag {
+        font-size: 12px;
+    }
+    #card #date {
+        font-size: 12px;
+
+    }
+    #card header h1 {
+        height: 30px;
+        font-size: 20px;
+    }
+    
+    #card header p {
+        height: 63px;
+        font-size: 14px;
+    }
+
+
+
+}
+/* 
+    --txt-preset1-extra-bold: 800;
+    --txt-preset1-font-size: 24px;
+    
+    --txt-preset2-medium: 500;
+    --txt-preset2-font-size: 16px;
+    
+    --txt-preset3-medium: 500;
+    --txt-preset3-extra-bold: 800;
+    --txt-preset3-font-size: 14px; */
